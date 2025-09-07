@@ -1,0 +1,18 @@
+meta {
+  name: GetCurrentWeather
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://api.openweathermap.org/data/3.0/onecall?lat=53.400002&lon=-2.983333&units=metric&exclude=minutely,daily
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lat: 53.400002
+  lon: -2.983333
+  units: metric
+  exclude: minutely,daily
+}
